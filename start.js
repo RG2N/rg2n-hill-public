@@ -15,7 +15,18 @@ nh.startServer({
 
     scripts: './user_scripts', // Your .js files path
 
-    maxPlayers: 20,
+    maxPlayers: 20, // Set the max amount of players for the server
+    
+    admin: 'none', // Set the admin (none, cheats) 
+    
+    
+    // ADMIN CONFIGS (ONLY MODIFY WHAT IS ENABLED ABOVE)
+    
+    cheatsAdmin: {
+        admins: [1, 417215],
+        audit: true,
+        safeCommands: false
+    },
 
     // Add npm / built-in node.js modules here
     modules: [
